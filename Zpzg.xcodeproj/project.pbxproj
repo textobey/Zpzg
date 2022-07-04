@@ -22,6 +22,8 @@
 		A6A343B9286D6AE600A76C6C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A343B8286D6AE600A76C6C /* Resource.swift */; };
 		A6A343BB286D73DF00A76C6C /* ContentTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A343BA286D73DF00A76C6C /* ContentTicketView.swift */; };
 		A6A343BD286D7C4C00A76C6C /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A343BC286D7C4C00A76C6C /* Metric.swift */; };
+		A6B660022872AA4900B4B1D9 /* SpendingInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B660012872AA4900B4B1D9 /* SpendingInputViewController.swift */; };
+		A6B660052872B07B00B4B1D9 /* SpendingInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B660042872B07B00B4B1D9 /* SpendingInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		A6A343B8286D6AE600A76C6C /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		A6A343BA286D73DF00A76C6C /* ContentTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTicketView.swift; sourceTree = "<group>"; };
 		A6A343BC286D7C4C00A76C6C /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		A6B660012872AA4900B4B1D9 /* SpendingInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingInputViewController.swift; sourceTree = "<group>"; };
+		A6B660042872B07B00B4B1D9 /* SpendingInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,7 @@
 			children = (
 				A67DA8A7286446DA006B4789 /* Main */,
 				A67DA8AE286454B1006B4789 /* Calendar */,
-				A67DA8B42864610C006B4789 /* New Group */,
+				A67DA8B42864610C006B4789 /* Spending */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -165,11 +169,13 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
-		A67DA8B42864610C006B4789 /* New Group */ = {
+		A67DA8B42864610C006B4789 /* Spending */ = {
 			isa = PBXGroup;
 			children = (
+				A6B660032872B06800B4B1D9 /* Subviews */,
+				A6B660012872AA4900B4B1D9 /* SpendingInputViewController.swift */,
 			);
-			path = "New Group";
+			path = Spending;
 			sourceTree = "<group>";
 		};
 		A6A343B5286D6ABB00A76C6C /* Service */ = {
@@ -180,6 +186,14 @@
 			);
 			name = Service;
 			path = Foundations;
+			sourceTree = "<group>";
+		};
+		A6B660032872B06800B4B1D9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A6B660042872B07B00B4B1D9 /* SpendingInputView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 				A67DA8A128644231006B4789 /* Then.swift in Sources */,
 				A6A343BD286D7C4C00A76C6C /* Metric.swift in Sources */,
 				A6A343B9286D6AE600A76C6C /* Resource.swift in Sources */,
+				A6B660022872AA4900B4B1D9 /* SpendingInputViewController.swift in Sources */,
 				A6A343BB286D73DF00A76C6C /* ContentTicketView.swift in Sources */,
 				A67DA8AA28644785006B4789 /* MonthCollectionViewCell.swift in Sources */,
 				A67DA88928643ED3006B4789 /* AppDelegate.swift in Sources */,
@@ -270,6 +285,7 @@
 				A6A343B4286D68B600A76C6C /* CalendarTicketView.swift in Sources */,
 				A6A343B0286D651E00A76C6C /* ConstraintMakerRelatable+.swift in Sources */,
 				A67DA8AD28644EB6006B4789 /* UIColor+.swift in Sources */,
+				A6B660052872B07B00B4B1D9 /* SpendingInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -117,8 +117,8 @@ extension CalendarViewController {
     }
     
     @objc func addPriceStatement() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .white
+        let viewController = SpendingInputViewController()
+        viewController.view.backgroundColor = .black
         present(viewController, animated: true)
     }
 }
