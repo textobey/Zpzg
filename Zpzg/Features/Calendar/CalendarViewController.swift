@@ -119,6 +119,15 @@ extension CalendarViewController {
     @objc func addPriceStatement() {
         let viewController = SpendingInputViewController()
         viewController.view.backgroundColor = .black
+        viewController.modalPresentationStyle = .pageSheet
+        if #available(iOS 15.0, *) {
+            if let sheet = viewController.sheetPresentationController {
+                sheet.detents = [.large()]
+                sheet.prefersGrabberVisible = true
+            }
+        } else {
+            viewController.grabberVisible = true
+        }
         present(viewController, animated: true)
     }
 }

@@ -31,7 +31,7 @@ class ContentTicketView: UIView {
     private func setupLayout() {
         addSubview(tableView)
         tableView.snp.makeConstraints {
-            $0.directionalEdges.equalToSuperview()
+            $0.top.bottom.leading.equalToSuperview()
             $0.width.equalTo(Metric.contentTicketWidth)
             $0.height.equalTo(Metric.ticketHeight)
         }

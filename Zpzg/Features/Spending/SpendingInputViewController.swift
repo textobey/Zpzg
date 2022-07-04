@@ -9,16 +9,24 @@ import UIKit
 
 class SpendingInputViewController: UIViewController {
     
+    var grabberVisible: Bool = false {
+        willSet {
+            if newValue { addGrabber() }
+        }
+    }
+    
     lazy var closeButton = UIButton().then {
-        $0.setImage(UIImage(systemName: "xmark"), for: .normal)
-        $0.addTarget(self, action: #selector(closeButtonDidTap), for: .touchUpInside)
         $0.tintColor = .white
+        $0.setPreferredSymbolConfiguration(.init(pointSize: 22), forImageIn: .normal)
+        $0.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
+        $0.addTarget(self, action: #selector(closeButtonDidTap), for: .touchUpInside)
     }
     
     lazy var spendingInputView = SpendingInputView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = R.Color.dark
         setupLayout()
     }
     
@@ -33,6 +41,20 @@ class SpendingInputViewController: UIViewController {
         spendingInputView.snp.makeConstraints {
             $0.top.equalTo(closeButton.snp.bottom).offset(12)
             $0.leading.trailing.bottom.equalToSuperview()
+        }
+    }
+    
+    private func addGrabber() {
+        let indicatorSize = CGSize(width: 30, height: 5)
+        let indicator = UIView().then {
+            $0.backgroundColor = .tertiaryLabel
+            $0.layer.cornerRadius = indicatorSize.height / CGFloat(2.0)
+        }
+        view.addSubview(indicator)
+        indicator.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(8)
+            $0.centerX.equalToSuperview()
+            $0.size.equalTo(indicatorSize)
         }
     }
     
