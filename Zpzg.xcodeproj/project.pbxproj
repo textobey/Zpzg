@@ -17,6 +17,10 @@
 		A67DA8AD28644EB6006B4789 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA8AC28644EB6006B4789 /* UIColor+.swift */; };
 		A67DA8B0286454F8006B4789 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA8AF286454F8006B4789 /* CalendarViewController.swift */; };
 		A67DA8B328645C87006B4789 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA8B228645C87006B4789 /* DateTableViewCell.swift */; };
+		A684555D2874228C009CFBA5 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A684555B2874228C009CFBA5 /* DataModel.xcdatamodeld */; };
+		A684555F28742BDA009CFBA5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684555E28742BDA009CFBA5 /* UIView+.swift */; };
+		A684556128742D51009CFBA5 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684556028742D51009CFBA5 /* UIButton+.swift */; };
+		A684556328742FA3009CFBA5 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684556228742FA3009CFBA5 /* UIImage+.swift */; };
 		A6A343B0286D651E00A76C6C /* ConstraintMakerRelatable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A343AF286D651E00A76C6C /* ConstraintMakerRelatable+.swift */; };
 		A6A343B4286D68B600A76C6C /* CalendarTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A343B3286D68B500A76C6C /* CalendarTicketView.swift */; };
 		A6A343B9286D6AE600A76C6C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A343B8286D6AE600A76C6C /* Resource.swift */; };
@@ -39,6 +43,10 @@
 		A67DA8AC28644EB6006B4789 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A67DA8AF286454F8006B4789 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A67DA8B228645C87006B4789 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		A684555C2874228C009CFBA5 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A684555E28742BDA009CFBA5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		A684556028742D51009CFBA5 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		A684556228742FA3009CFBA5 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		A6A343AF286D651E00A76C6C /* ConstraintMakerRelatable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintMakerRelatable+.swift"; sourceTree = "<group>"; };
 		A6A343B3286D68B500A76C6C /* CalendarTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTicketView.swift; sourceTree = "<group>"; };
 		A6A343B8286D6AE600A76C6C /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 				A67DA88828643ED3006B4789 /* AppDelegate.swift */,
 				A67DA89328643ED4006B4789 /* LaunchScreen.storyboard */,
 				A67DA89128643ED4006B4789 /* Assets.xcassets */,
+				A684555B2874228C009CFBA5 /* DataModel.xcdatamodeld */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,7 +155,10 @@
 		A67DA8AB28644E9D006B4789 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A684555E28742BDA009CFBA5 /* UIView+.swift */,
 				A67DA8AC28644EB6006B4789 /* UIColor+.swift */,
+				A684556228742FA3009CFBA5 /* UIImage+.swift */,
+				A684556028742D51009CFBA5 /* UIButton+.swift */,
 				A6A343AF286D651E00A76C6C /* ConstraintMakerRelatable+.swift */,
 			);
 			path = Extension;
@@ -280,14 +292,18 @@
 				A67DA8B0286454F8006B4789 /* CalendarViewController.swift in Sources */,
 				A67DA8A128644231006B4789 /* Then.swift in Sources */,
 				A6A343BD286D7C4C00A76C6C /* Metric.swift in Sources */,
+				A684556128742D51009CFBA5 /* UIButton+.swift in Sources */,
 				A6A343B9286D6AE600A76C6C /* Resource.swift in Sources */,
 				A6B660022872AA4900B4B1D9 /* SpendingInputViewController.swift in Sources */,
+				A684555D2874228C009CFBA5 /* DataModel.xcdatamodeld in Sources */,
 				A6A343BB286D73DF00A76C6C /* ContentTicketView.swift in Sources */,
 				A67DA8AA28644785006B4789 /* MonthCollectionViewCell.swift in Sources */,
 				A67DA88928643ED3006B4789 /* AppDelegate.swift in Sources */,
 				A67DA8A6286442CD006B4789 /* MainViewController.swift in Sources */,
 				A6A343B4286D68B600A76C6C /* CalendarTicketView.swift in Sources */,
+				A684555F28742BDA009CFBA5 /* UIView+.swift in Sources */,
 				A6A343B0286D651E00A76C6C /* ConstraintMakerRelatable+.swift in Sources */,
+				A684556328742FA3009CFBA5 /* UIImage+.swift in Sources */,
 				A67DA8AD28644EB6006B4789 /* UIColor+.swift in Sources */,
 				A6B660052872B07B00B4B1D9 /* SpendingInputView.swift in Sources */,
 			);
@@ -535,6 +551,19 @@
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A684555B2874228C009CFBA5 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A684555C2874228C009CFBA5 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A684555C2874228C009CFBA5 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A67DA87D28643ED3006B4789 /* Project object */;
 }

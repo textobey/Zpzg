@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import IQKeyboardManagerSwift
 
 class SpendingInputView: UIView {
     
@@ -47,10 +48,22 @@ class SpendingInputView: UIView {
         $0.distribution = .fillEqually
     }
     
+    // system버튼 유형을 사용하면 훨씬 더 유연하고, 장난기 있고, 반응성이 뛰어난 애니메이션을 얻을 수 있습니다! 이것 좀 봐, 마법 같아.
+    lazy var saveButton = UIButton(type: .system).then {
+        $0.tintColor = .white
+        $0.layer.cornerRadius = 12
+        $0.layer.masksToBounds = true
+        $0.setTitle("저장하기", for: .normal)
+        $0.setBackgroundColor(.systemBlue, for: .normal)
+        $0.titleLabel?.font = .systemFont(ofSize: 18, weight: .medium)
+        $0.addTarget(self, action: #selector(saveButtonDidTap), for: .touchUpInside)
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
         bindDataSource()
+        titleLabelTextField.becomeFirstResponder()
     }
     
     required init?(coder: NSCoder) {
@@ -91,10 +104,17 @@ class SpendingInputView: UIView {
             $0.height.equalTo(18)
         }
         
-        scrollContainerView.addSubview(stackView)
+        scrollContainerView.addSubviews([stackView, saveButton])
         stackView.snp.makeConstraints {
             $0.top.equalTo(spendingPriceTextField.snp.bottom).offset(10)
-            $0.leading.trailing.bottom.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
+            $0.bottom.equalTo(saveButton.snp.top).offset(-32)
+        }
+        
+        saveButton.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.bottom.equalToSuperview().offset(-32).priority(.high)
+            $0.height.equalTo(44)
         }
     }
     
@@ -108,6 +128,10 @@ class SpendingInputView: UIView {
     
     @objc func wonButtonDidTap() {
         spendingPriceTextField.becomeFirstResponder()
+    }
+    
+    @objc func saveButtonDidTap() {
+        print("")
     }
 }
 
