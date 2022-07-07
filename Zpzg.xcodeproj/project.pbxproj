@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A655B9172876C36C00FBA171 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655B9162876C36C00FBA171 /* PersistenceManager.swift */; };
+		A655B9202876CAF000FBA171 /* Expense.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A655B91E2876CAF000FBA171 /* Expense.xcdatamodeld */; };
+		A655B9272876CB8500FBA171 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655B9252876CB8500FBA171 /* Expense+CoreDataClass.swift */; };
+		A655B9282876CB8500FBA171 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655B9262876CB8500FBA171 /* Expense+CoreDataProperties.swift */; };
 		A67DA88928643ED3006B4789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA88828643ED3006B4789 /* AppDelegate.swift */; };
 		A67DA89228643ED4006B4789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67DA89128643ED4006B4789 /* Assets.xcassets */; };
 		A67DA89528643ED4006B4789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67DA89328643ED4006B4789 /* LaunchScreen.storyboard */; };
@@ -17,7 +21,6 @@
 		A67DA8AD28644EB6006B4789 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA8AC28644EB6006B4789 /* UIColor+.swift */; };
 		A67DA8B0286454F8006B4789 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA8AF286454F8006B4789 /* CalendarViewController.swift */; };
 		A67DA8B328645C87006B4789 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA8B228645C87006B4789 /* DateTableViewCell.swift */; };
-		A684555D2874228C009CFBA5 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A684555B2874228C009CFBA5 /* DataModel.xcdatamodeld */; };
 		A684555F28742BDA009CFBA5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684555E28742BDA009CFBA5 /* UIView+.swift */; };
 		A684556128742D51009CFBA5 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684556028742D51009CFBA5 /* UIButton+.swift */; };
 		A684556328742FA3009CFBA5 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684556228742FA3009CFBA5 /* UIImage+.swift */; };
@@ -32,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A655B9162876C36C00FBA171 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		A655B91F2876CAF000FBA171 /* Expense.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expense.xcdatamodel; sourceTree = "<group>"; };
+		A655B9252876CB8500FBA171 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A655B9262876CB8500FBA171 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A67DA88528643ED3006B4789 /* Zpzg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zpzg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67DA88828643ED3006B4789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67DA89128643ED4006B4789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +50,6 @@
 		A67DA8AC28644EB6006B4789 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A67DA8AF286454F8006B4789 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A67DA8B228645C87006B4789 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
-		A684555C2874228C009CFBA5 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		A684555E28742BDA009CFBA5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A684556028742D51009CFBA5 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		A684556228742FA3009CFBA5 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				A67DA89628643ED4006B4789 /* Info.plist */,
+				A655B9252876CB8500FBA171 /* Expense+CoreDataClass.swift */,
+				A655B9262876CB8500FBA171 /* Expense+CoreDataProperties.swift */,
 				A67DA89D28644206006B4789 /* Features */,
 				A67DA8AB28644E9D006B4789 /* Extension */,
 				A67DA89E2864420F006B4789 /* Foundations */,
@@ -101,10 +109,10 @@
 		A67DA89C28644105006B4789 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A655B91E2876CAF000FBA171 /* Expense.xcdatamodeld */,
 				A67DA88828643ED3006B4789 /* AppDelegate.swift */,
 				A67DA89328643ED4006B4789 /* LaunchScreen.storyboard */,
 				A67DA89128643ED4006B4789 /* Assets.xcassets */,
-				A684555B2874228C009CFBA5 /* DataModel.xcdatamodeld */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 		A6A343B5286D6ABB00A76C6C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A655B9162876C36C00FBA171 /* PersistenceManager.swift */,
 				A6A343B8286D6AE600A76C6C /* Resource.swift */,
 				A6A343BC286D7C4C00A76C6C /* Metric.swift */,
 			);
@@ -290,20 +299,23 @@
 			files = (
 				A67DA8B328645C87006B4789 /* DateTableViewCell.swift in Sources */,
 				A67DA8B0286454F8006B4789 /* CalendarViewController.swift in Sources */,
+				A655B9272876CB8500FBA171 /* Expense+CoreDataClass.swift in Sources */,
 				A67DA8A128644231006B4789 /* Then.swift in Sources */,
 				A6A343BD286D7C4C00A76C6C /* Metric.swift in Sources */,
+				A655B9282876CB8500FBA171 /* Expense+CoreDataProperties.swift in Sources */,
 				A684556128742D51009CFBA5 /* UIButton+.swift in Sources */,
 				A6A343B9286D6AE600A76C6C /* Resource.swift in Sources */,
 				A6B660022872AA4900B4B1D9 /* SpendingInputViewController.swift in Sources */,
-				A684555D2874228C009CFBA5 /* DataModel.xcdatamodeld in Sources */,
 				A6A343BB286D73DF00A76C6C /* ContentTicketView.swift in Sources */,
 				A67DA8AA28644785006B4789 /* MonthCollectionViewCell.swift in Sources */,
 				A67DA88928643ED3006B4789 /* AppDelegate.swift in Sources */,
 				A67DA8A6286442CD006B4789 /* MainViewController.swift in Sources */,
 				A6A343B4286D68B600A76C6C /* CalendarTicketView.swift in Sources */,
+				A655B9172876C36C00FBA171 /* PersistenceManager.swift in Sources */,
 				A684555F28742BDA009CFBA5 /* UIView+.swift in Sources */,
 				A6A343B0286D651E00A76C6C /* ConstraintMakerRelatable+.swift in Sources */,
 				A684556328742FA3009CFBA5 /* UIImage+.swift in Sources */,
+				A655B9202876CAF000FBA171 /* Expense.xcdatamodeld in Sources */,
 				A67DA8AD28644EB6006B4789 /* UIColor+.swift in Sources */,
 				A6B660052872B07B00B4B1D9 /* SpendingInputView.swift in Sources */,
 			);
@@ -553,13 +565,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		A684555B2874228C009CFBA5 /* DataModel.xcdatamodeld */ = {
+		A655B91E2876CAF000FBA171 /* Expense.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A684555C2874228C009CFBA5 /* DataModel.xcdatamodel */,
+				A655B91F2876CAF000FBA171 /* Expense.xcdatamodel */,
 			);
-			currentVersion = A684555C2874228C009CFBA5 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			currentVersion = A655B91F2876CAF000FBA171 /* Expense.xcdatamodel */;
+			path = Expense.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

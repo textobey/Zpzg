@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import IQKeyboardManagerSwift
 
-class SpendingInputView: UIView {
+class SpendingInputView: UIView, UITextFieldDelegate {
     
     private let dataSources: [String] = ["날짜", "카테고리", "제목", "결제수단", "메모"]
     
@@ -24,6 +24,7 @@ class SpendingInputView: UIView {
     }
     
     lazy var titleLabelTextField = UITextField().then {
+        $0.delegate = self
         $0.placeholder = "제목 없음"
         $0.font = .systemFont(ofSize: 32, weight: .bold)
     }
@@ -131,11 +132,18 @@ class SpendingInputView: UIView {
     }
     
     @objc func saveButtonDidTap() {
-        print("")
+        if let stringPrice = spendingPriceTextField.text, let intPrice = Int64(stringPrice) {
+            PersistenceManager.shared.create(model: Spending(price: intPrice))
+        }
+        print(PersistenceManager.shared.read())
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        spendingPriceTextField.becomeFirstResponder()
     }
 }
 
-class SpendingInputListView: UIView {
+fileprivate class SpendingInputListView: UIView {
     
     lazy var wrapperView = UIView()
     
